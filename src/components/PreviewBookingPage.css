@@ -1,0 +1,38 @@
+/* src/components/PreviewBookingPage.css */
+
+.booking-summary {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .booking-summary h2 {
+    margin-top: 0;
+  }
+  
+  .booking-summary p {
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e0a800;
+  }
+  

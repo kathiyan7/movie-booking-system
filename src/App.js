@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LoginPage from './components/LoginPage';
+import SignInPage from './components/SignInPage';
+import ForgotPasswordPage from './components/ForgotPasswordPage';
+import HomePage from './components/HomePage';
+import TheatreSelectionPage from './components/TheatreSelectionPage';
+import PreviewBookingPage from './components/PreviewBookingPage';
+import PaymentPage from './components/PaymentPage';
+import ConfirmationPage from './components/ConfirmationPage';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/signin" element={<SignInPage />} />
+        <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/theatre-selection" element={<TheatreSelectionPage />} />
+        <Route path="/preview-booking" element={<PreviewBookingPage />} />
+        <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/confirmation" element={<ConfirmationPage />} />
+      </Routes>
+    </Router>
   );
 }
 

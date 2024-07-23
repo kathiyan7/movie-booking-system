@@ -1,0 +1,20 @@
+/* src/components/ConfirmationPage.css */
+
+.confirmation {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .confirmation h2 {
+    margin-top: 0;
+  }
+  
+  .confirmation p {
+    margin: 10px 0;
+  }
+  
